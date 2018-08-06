@@ -3,4 +3,4 @@ project(fraction_class)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(fraction_class main.cpp)
+add_executable(fraction_class main.cpp fraction/fraction.h fraction/fraction.cpp)
