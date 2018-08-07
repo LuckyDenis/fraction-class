@@ -16,6 +16,12 @@ class fraction{
         friend fraction operator - (const fraction & f1, const fraction & f2);
         friend fraction operator * (const fraction & f1, const fraction & f2);
         friend fraction operator / (const fraction & f1, const fraction & f2);
+        friend const bool operator < (const fraction & f1, const fraction & f2);
+        friend const bool operator > (const fraction & f1, const fraction & f2);
+        friend const bool operator <= (const fraction & f1, const fraction & f2);
+        friend const bool operator >= (const fraction & f1, const fraction & f2);
+        friend const bool operator == (const fraction & f1, const fraction & f2);
+        friend const bool operator != (const fraction & f1, const fraction & f2);
         void operator = (const fraction & f1);
     private:
         int numerator = 1;

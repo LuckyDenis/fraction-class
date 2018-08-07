@@ -8,5 +8,6 @@ int main() {
     std::cin >> f2;
     f1 = f2;
     std::cout << f1 << std::endl;
+    std::cout << (bool)f1 << std::endl;
     return 0;
 }

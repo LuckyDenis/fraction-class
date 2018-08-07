@@ -159,6 +159,18 @@ void fraction::operator = (const fraction &f1) {
     this->denominator = f1.denominator;
 }
 
+// Проверка на равенство двух дробей
+const bool operator == (const fraction & f1, const fraction & f2){
+    return f1.denominator == f2.denominator && f1.numerator == f2.numerator;
+}
+
+// Проверка на неравенство двух дробей
+const bool operator != (const fraction & f1, const fraction & f2){
+    return f1.denominator != f2.denominator && f1.denominator != f2.numerator;
+}
+
+
+
 // Вывод из потока
 std::istream& operator >> (std::istream & stream, fraction & f){
     std::cin >> f.numerator;
